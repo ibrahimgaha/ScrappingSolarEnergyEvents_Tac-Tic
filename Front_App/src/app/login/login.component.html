@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="./login.component.css">
+  
+</head>
+<body>
+
+    
+
+    <div class="container">
+        <div class="TitleArea">
+
+            <div class="title_page">
+                <h1>Making web data extraction
+                    <br><span>easy and accessible</span> 
+                    for everyone
+                </h1>
+            </div>
+
+        </div>
+        
+        <div class="LoginAera">
+            <div class="main"> 
+        
+    
+                <input type="checkbox" id="chk" aria-hidden="true">
+            
+                    <div class="signup">
+                        <form>
+                            <label for="chk" ariahidden="true">S'inscrire</label>
+                            <input type="text" name="txt" placeholder="Nom d'utilisateur" required=""  >
+                            <input type="email" name="email" placeholder="Email" required="" >
+                            <input type="password" name="pswd" placeholder="Mot de Passe" required="" >
+                            <button>S'inscrire</button>
+                        </form>
+                    </div>
+                        <form (submit)="onLogin()" [formGroup]="cnx_form" class="login">
+                            <label for="chk" aria-hidden="true">Connexion</label>
+                            <input type="email" name="email" placeholder="Email" required="" formControlName="Email_user">
+                            <input type="password" name="pswd" placeholder="Mot de Passe" required="" formControlName="Mdp_user">
+                            <button>Connexion</button>
+                        </form>
+            </div>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+   
+    
+
+</body>
+</html>

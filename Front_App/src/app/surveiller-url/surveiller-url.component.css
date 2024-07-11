@@ -1,0 +1,45 @@
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Poppins', sans-serif;
+	background: linear-gradient(to bottom, #15113f, #423d7d, #4e4e6a);
+}
+.container {  display: grid;
+    grid-template-columns: 1.9fr 0.1fr 1.2fr;
+    grid-template-rows: 0.6fr 0.7fr 0.7fr 2fr 2.7fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . ."
+      "InputSpace InputSpace InputSpace"
+      ". . ."
+      ". . .";
+  }
+  
+  .InputSpace { grid-area: InputSpace; }
+  
+  
+
+
+
+input{
+    width: 800px;
+    
+}
+.btn_surv{
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 200px;
+}
+
+.table{
+margin-top: 80px;
+color: white;
+
+}

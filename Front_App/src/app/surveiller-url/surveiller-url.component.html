@@ -1,0 +1,39 @@
+<app-navbar></app-navbar>
+   
+
+  <body>
+
+    <div class="container">
+      <div class="InputSpace">
+        <form  [formGroup]="f_url" >
+          <br>
+           <mat-form-field class="example-full-width  ">
+              <mat-label class="c_url"></mat-label>
+              <input matInput placeholder="Votre URL à Surveiller" formControlName="name_url">
+              
+            </mat-form-field>
+  
+  
+          
+          
+          <button mat-fab extended class="btn_surv" (click)="fetchData()">
+              <mat-icon>search</mat-icon>
+              
+              
+              Surveiller
+            </button>
+  
+            
+      </form>
+      </div>
+     
+
+    </div>
+
+    
+</body>
+
+
+    
+
+    

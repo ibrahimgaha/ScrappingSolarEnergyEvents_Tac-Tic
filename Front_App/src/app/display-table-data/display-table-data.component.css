@@ -1,0 +1,37 @@
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Poppins', sans-serif;
+	background: linear-gradient(to bottom, #15113f, #423d7d, #4e4e6a);
+}
+.filter-form {
+  margin-bottom: 20px;
+}
+.filtrelabel{
+  font-size: large;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 10px;
+}
+
+
+
+.container {  display: grid;
+    grid-template-columns: 1.9fr 0.1fr 1.2fr;
+    grid-template-rows: 0.6fr 0.7fr 0.7fr 2fr 2.7fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "TableSpace TableSpace TableSpace"
+      "TableSpace TableSpace TableSpace"
+      "TableSpace TableSpace TableSpace"
+      "TableSpace TableSpace TableSpace"
+      "TableSpace TableSpace TableSpace"
+      ". . .";
+  }
+  
+  .TableSpace { grid-area: TableSpace; }
+  

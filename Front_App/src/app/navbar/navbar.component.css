@@ -1,0 +1,15 @@
+
+.spacer{
+    flex:  auto;
+}
+a{
+    font-family: 'Roboto',sans-serif;
+    text-decoration: none;
+    font-size: 17px;
+    margin:10px
+}
+.Title{
+    font-size: larger;
+    font-weight: 400;
+    margin-bottom: 5px;
+}

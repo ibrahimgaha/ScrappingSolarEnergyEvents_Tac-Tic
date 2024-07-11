@@ -1,0 +1,22 @@
+/* styles.css */
+
+@import '~@angular/material/theming';
+
+/* Define your custom theme */
+:root {
+  --mat-indigo: #394cbc; /* Replace with your desired primary color code */
+  --mat-orange: #ff9800; /* Replace with your desired orange color code */
+}
+
+/* Set the colors for your toolbar */
+.mat-toolbar {
+  background-color: var(--mat-orange);
+  color: rgb(28, 28, 28); /* Set the text color to contrast with the background */
+}
+
+/* Additional styles for other elements (if needed) */
+/* For example, to style the raised button with an orange background */
+.mat-raised-button {
+  background-color: var(--mat-orange);
+  color: rgb(121, 121, 121);
+}

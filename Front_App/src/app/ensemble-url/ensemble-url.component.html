@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+
+<table class="table" style="margin-top: 50px;">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Les URLS que vous pouvez utiliser</th>
+      <th scope="col">Dernier clic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let url of urls; let i = index">
+      <th scope="row">{{ i + 1 }}</th>
+      <td>{{ url.url }}</td>
+      <td>{{ getLastClickedText(url.url) }}</td>
+    </tr>
+  </tbody>
+</table>
